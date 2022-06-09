@@ -1,0 +1,173 @@
+.rsvp-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.rsvp-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.rsvp-content > span:nth-child(1) {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.rsvp-content > h2 {
+  font-family: Cormorant Infant, serif;
+  color: var(--primary);
+  font-size: 26px;
+}
+
+.wishes-container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.wishes-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  transition: margin 0.5s;
+  -o-transition: margin 0.5s;
+  -ms-transition: margin 0.5s;
+  -moz-transition: margin 0.5s;
+  -webkit-transition: margin 0.5s;
+}
+
+.wishes-card > * {
+  text-align: center;
+}
+
+.guest-name {
+  margin: 20px 0;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.guest-wishes {
+  /* width: 60%; */
+  color: var(--secondary);
+}
+
+.wishes-prev,
+.wishes-next {
+  position: absolute;
+  color: var(--primary);
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+}
+
+.wishes-prev {
+  top: 50%;
+  left: 0;
+  bottom: 50%;
+}
+
+.wishes-next {
+  top: 50%;
+  right: 0;
+  bottom: 50%;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rsvp-form label {
+  margin-top: 2rem;
+  font-family: Montserrat, sans-serif;
+  color: var(--primary);
+}
+
+.form-input {
+  height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+#wishes {
+  height: auto;
+  padding: 20px;
+}
+
+.error-message {
+  margin-top: 2rem;
+  color: red;
+}
+
+.submit-button {
+  margin-bottom: 2rem;
+  height: 50px;
+  background-color: var(--primary);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rsvp-content[data-animate="hide"] {
+  opacity: 0;
+  transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+}
+
+.rsvp-content[data-animate="show"] {
+  opacity: 1;
+  transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: all 0.8s cubic-bezier(0.855, 1.65, 0.625, 0.68) 0s;
+  -o-transition: all 0.8s cubic-bezier(0.855, 1.65, 0.625, 0.68) 0s;
+  -ms-transition: all 0.8s cubic-bezier(0.855, 1.65, 0.625, 0.68) 0s;
+  -moz-transition: all 0.8s cubic-bezier(0.855, 1.65, 0.625, 0.68) 0s;
+  -webkit-transition: all 0.8s cubic-bezier(0.855, 1.65, 0.625, 0.68) 0s;
+}
+
+.rsvp-form[data-animate="hide"] > * {
+  opacity: 0;
+  transform: translate(0, 200px);
+}
+
+.rsvp-form[data-animate="show"] > * {
+  opacity: 1;
+  transform: translate(0);
+  transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+}

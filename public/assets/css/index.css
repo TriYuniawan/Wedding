@@ -1,0 +1,33 @@
+:root {
+  --primary: #f0cfb4;
+  --secondary: #8d8c76;
+  --filter-primary: invert(86%) sepia(92%) saturate(5692%) hue-rotate(287deg)
+    brightness(102%) contrast(93%);
+}
+
+body {
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #7b736c;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
